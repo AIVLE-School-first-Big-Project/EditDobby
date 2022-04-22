@@ -44,6 +44,4 @@ EDIT DOBBY uses a number of open source projects to work properly:
 - [AWS] - 클라우드 플랫폼
 - [Colab] - 딥러닝 코드를 실행하기 위한 가상서버
 
-And of course EDIT DOBBY itself is open source with a [public repository][dill]
-on GitHub.  
 
