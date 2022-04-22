@@ -1,7 +1,7 @@
 ![final](https://user-images.githubusercontent.com/79674119/164652365-de9154be-72b8-4b97-a614-7e6f73370ac4.png)
 
 
-# 크리에디터를 위한  자동 영상 편집 웹 서비스 EDIT DOBBY
+# 크리에이터를 위한  자동 영상 편집 웹 서비스 EDIT DOBBY
 <br/>
 
 :link: **관련링크** <a href="https://drive.google.com/file/d/1fzgPNdyGTnzvcMkRXTbUQq1-1Dv0BtUc/view?usp=sharing"><img src="https://img.shields.io/badge/Poster-3766AB?style=flat-square&color=blue&link=내링크"/></a>
