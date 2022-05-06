@@ -26,7 +26,7 @@
 
 ## Main Model Architecture
 
-![모델 구조](https://user-images.githubusercontent.com/79674119/167116142-2bd7508c-3074-4071-bb18-30b5b11d1f26.png)
+![모델 구조2](https://user-images.githubusercontent.com/79674119/167116303-608e0b91-1c72-4fd3-bde6-372ad059a8d2.png)
   
   
 <br/>
