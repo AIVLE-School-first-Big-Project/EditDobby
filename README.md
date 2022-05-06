@@ -21,6 +21,13 @@
 - 영상 업로드시 shorts를 자동으로 생성
 - 영상에 들어간 비속어를 자동으로 필터링
 - 영상에 어울리는 유튜브 썸네일 추천 
+
+<br/>
+
+## Main Model Architecture
+
+![모델 구조](https://user-images.githubusercontent.com/79674119/167116142-2bd7508c-3074-4071-bb18-30b5b11d1f26.png)
+  
   
 <br/>
   
