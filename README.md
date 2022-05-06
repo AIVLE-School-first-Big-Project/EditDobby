@@ -31,7 +31,6 @@
 <img src="https://img.shields.io/badge/JavaScript-3766AB?style=flat-square&logo=React&logoColor=black&color=84DFFF"/></a>
 <img src="https://img.shields.io/badge/CSS-3766AB?style=flat-square&color=grey"/></a>
 <img src="https://img.shields.io/badge/TensorFlow-3766AB?style=flat-square&logo=TensorFlow&logoColor=yellow&color=orange"/></a>
-<img src="https://img.shields.io/badge/AWS-3766AB?style=flat-square&logo=Amazon AWS&logoColor=orange&color=E8E1D9"/></a>
 
 EDIT DOBBY uses a number of open source projects to work properly:
 
@@ -41,7 +40,6 @@ EDIT DOBBY uses a number of open source projects to work properly:
 - [JavaScript] - 프론트엔드 구현
 - [CSS] - 프론트엔드 구현
 - [TensorFlow] - 모델 구현
-- [AWS] - 클라우드 플랫폼
 - [Colab] - 딥러닝 코드를 실행하기 위한 가상서버
 
 
