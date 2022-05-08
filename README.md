@@ -28,6 +28,10 @@
 
 ![모델 구조2](https://user-images.githubusercontent.com/79674119/167116303-608e0b91-1c72-4fd3-bde6-372ad059a8d2.png)
   
+<br/>
+
+## 데이터베이스
+![image](https://user-images.githubusercontent.com/74889165/167282957-48f2253d-c69b-444b-86ba-3602ee4f4fb3.png)
 
 <br/>
 
