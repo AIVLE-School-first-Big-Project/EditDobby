@@ -55,4 +55,4 @@ EDIT DOBBY uses a number of open source projects to work properly:
 
 
 ## 서비스 화면  
-<img src="C:\Users\User\Documents\카카오톡 받은 파일\main화면.gif"/></a>
+![main화면](https://user-images.githubusercontent.com/74889165/167282795-8ccab2e9-87b3-471c-a00b-c786994ff7d3.gif)
