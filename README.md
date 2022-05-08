@@ -60,3 +60,5 @@ EDIT DOBBY uses a number of open source projects to work properly:
 - [CSS] - 프론트엔드 구현
 - [TensorFlow] - 모델 구현
 - [Colab] - 딥러닝 코드를 실행하기 위한 가상서버
+
+![image](https://user-images.githubusercontent.com/74889165/167285478-a7a94161-8397-47b4-bd88-200f32d29674.png)
