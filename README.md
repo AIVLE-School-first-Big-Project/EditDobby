@@ -37,7 +37,7 @@
 
 
 ## 서비스 화면  
-![main화면](https://user-images.githubusercontent.com/74889165/167282795-8ccab2e9-87b3-471c-a00b-c786994ff7d3.gif)
+![animation](https://user-images.githubusercontent.com/74889165/167283316-73bbcffb-7dea-4135-afa9-bbc86cebbc09.gif)
 
 <br/>
   
