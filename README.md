@@ -28,6 +28,13 @@
 
 ![모델 구조2](https://user-images.githubusercontent.com/79674119/167116303-608e0b91-1c72-4fd3-bde6-372ad059a8d2.png)
   
+
+<br/>
+
+
+## 서비스 화면  
+![main화면](https://user-images.githubusercontent.com/74889165/167282795-8ccab2e9-87b3-471c-a00b-c786994ff7d3.gif)
+
 <br/>
   
   
@@ -48,11 +55,3 @@ EDIT DOBBY uses a number of open source projects to work properly:
 - [CSS] - 프론트엔드 구현
 - [TensorFlow] - 모델 구현
 - [Colab] - 딥러닝 코드를 실행하기 위한 가상서버
-
-
-
-<br/>
-
-
-## 서비스 화면  
-![main화면](https://user-images.githubusercontent.com/74889165/167282795-8ccab2e9-87b3-471c-a00b-c786994ff7d3.gif)
