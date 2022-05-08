@@ -4,6 +4,8 @@
 # 크리에이터를 위한  자동 영상 편집 웹 서비스 EDIT DOBBY
 <br/>
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAIVLE-School-first-Big-Project%2FEditDobby&count_bg=%236E5029&title_bg=%23F3C385&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 :link: **관련링크** <a href="https://drive.google.com/file/d/1fzgPNdyGTnzvcMkRXTbUQq1-1Dv0BtUc/view?usp=sharing"><img src="https://img.shields.io/badge/Poster-3766AB?style=flat-square&color=blue&link=내링크"/></a>
 
 <br/>
@@ -36,7 +38,7 @@
 <br/>
 
 
-## 서비스 화면  
+## 서비스 메인 화면  
 ![animation](https://user-images.githubusercontent.com/74889165/167283316-73bbcffb-7dea-4135-afa9-bbc86cebbc09.gif)
 
 <br/>
