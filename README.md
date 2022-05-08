@@ -28,8 +28,8 @@
 
 ![모델 구조2](https://user-images.githubusercontent.com/79674119/167116303-608e0b91-1c72-4fd3-bde6-372ad059a8d2.png)
   
-  
 <br/>
+  
   
 ## Tech
 <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a>
@@ -50,3 +50,9 @@ EDIT DOBBY uses a number of open source projects to work properly:
 - [Colab] - 딥러닝 코드를 실행하기 위한 가상서버
 
 
+
+<br/>
+
+
+## 서비스 화면  
+<img src="C:\Users\User\Documents\카카오톡 받은 파일\main화면.gif"/></a>
