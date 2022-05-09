@@ -32,7 +32,7 @@
 <br/>
 
 ## 데이터베이스
-![image](https://user-images.githubusercontent.com/74889165/167282957-48f2253d-c69b-444b-86ba-3602ee4f4fb3.png)
+![ERD](https://user-images.githubusercontent.com/72778887/167324829-7e4031fc-0ed2-4469-9304-dbf63c5d2118.png)
 
 <br/>
 
