@@ -1,7 +1,7 @@
 ![final](https://user-images.githubusercontent.com/79674119/164652365-de9154be-72b8-4b97-a614-7e6f73370ac4.png)
 
 
-# 크리에이터를 위한  자동 영상 편집 웹 서비스 EDIT DOBBY 🎬 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAIVLE-School-first-Big-Project%2FEditDobby&count_bg=%236E5029&title_bg=%23F3C385&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+# 크리에이터를 위한 자동 영상 편집 웹 서비스 EDIT DOBBY🎬 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAIVLE-School-first-Big-Project%2FEditDobby&count_bg=%236E5029&title_bg=%23F3C385&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 <br/>
 
 
