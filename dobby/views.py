@@ -125,10 +125,10 @@ def fun(request):
         
         file_path = str(settings.BASE_DIR) + ('/media/%s' % request.session['file_name'])
         rmv1 = str(settings.BASE_DIR) + ('/media/%s' % 'no_voice.mp4')
-        # rmv2 = str(settings.BASE_DIR) + ('/media/%s' % 'subtitle.txt')
+        rmv2 = str(settings.BASE_DIR) + ('/media/%s' % 'subtitle.txt')
         os.remove(file_path)
         os.remove(rmv1)
-        # os.remove(rmv2)
+        os.remove(rmv2)
         
         now = datetime.datetime.now()
         
