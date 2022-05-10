@@ -28,6 +28,9 @@
 ## Main Model Architecture
 
 ![모델 구조2](https://user-images.githubusercontent.com/79674119/167116303-608e0b91-1c72-4fd3-bde6-372ad059a8d2.png)
+
+#### 학습된 모델 경로(\dobbyedit\dobby\imgcap\ 내 저장)
+https://drive.google.com/file/d/1V7E8Nj9tceUOHj4vmLwUs6BUF02zUmPG/view?usp=sharing
   
 <br/>
 
