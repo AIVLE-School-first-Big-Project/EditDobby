@@ -1,19 +1,18 @@
-from django.shortcuts import redirect, render, get_object_or_404
-from django.http import Http404, HttpResponse
+from django.shortcuts import redirect, render
 from django.utils import timezone
-from django.contrib import auth
-from django.contrib.auth import authenticate, login
-from django.contrib.auth.hashers import check_password 
 from main.models import Member
 from dobby.models import File
+from django.contrib import messages
 
 # HOME
 def main(request):
     # s_id = request.session.get('s_id') # session id 유무 체크
     # if s_id==None:
-    #     return render(request, "main/login.html")
+    #     return redirect("/main/login/")
     
     return render(request,"main/main.html")
+# def main(request):
+#     return render(request,"main/main.html")
 
 # SIGNUP
 def signup(request):   
@@ -23,7 +22,7 @@ def signup(request):
     elif request.method == "POST":
         form = Member(member_id=request.POST['member_id'], member_email=request.POST['member_email'],
                       member_password=request.POST['member_password'], member_joindate=timezone.localtime(),
-                      member_nick=request.POST['member_nick']
+                      member_nick=request.POST['member_nick'], member_status=0,
                     )
         form.save()
     return redirect("/main/login/")
@@ -42,6 +41,8 @@ def login(request):
             out_id = Member.objects.get(member_id=in_id)
         except Member.DoesNotExist:
             out_id = None
+            messages.info(request, '아이디 혹은 비밀번호를 확인해주세요.')
+            return render(request, 'main/login.html')
         
         if out_id is None:        
             return render(request, "main/login.html")
@@ -53,14 +54,21 @@ def login(request):
 
 # LOGOUT
 def logout(request):
-    request.session.pop('s_id')
+    s_id = request.session.get('s_id') # session id 유무 체크
+    if s_id==None:
+        return redirect("/main/login/")
     
-    return render(request, "main/login.html")
+    request.session.flush()
+    
+    return redirect("/main/login/")
 
 
 # MY PAGE
 def my(request):
+    s_id = request.session.get('s_id') # session id 유무 체크
+    if s_id==None:
+        return redirect("/main/login/")
     
     files = File.objects.all()
     
-    return render(request,"main/my.html", {'files':files} )
+    return render(request,"main/my.html", {'files' : files})

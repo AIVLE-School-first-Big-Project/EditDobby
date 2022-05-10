@@ -1,4 +1,5 @@
 {% load static %}
+{% comment %} <link rel="stylesheet" href="{% static 'css/topnavi.css' %}"> {% endcomment %}
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -9,6 +10,7 @@
     <title>Post</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/post.css' %}">
+    <link rel="stylesheet" href="{% static 'css/topnavi.css' %}">
     {% comment %} <script src="/static/javascript/post.js"></script> {% endcomment %}
     <script
         src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&skin=sunburst&lang=css">
@@ -43,17 +45,11 @@
         </div>
         {% comment %} <div class="navcenter"></div> {% endcomment %}
         <div class="navright">
-            <li class=nav_item>    
-                <a href="{%url 'main:main' %}">영상편집</a>
-            </li>
-            <li class="divider"></li>
-            <li class=nav_item>    
-                <a href="{%url 'main:main' %}">게시판</a>
-            </li>
-            <li class="divider"></li>
-            <li class=nav_item>    
-                <a href="{%url 'main:main' %}">MY</a>
-            </li>
+            <div class="gnb">
+                <a href="{%url 'main:main' %}" data-link="Home"></a>
+                <a href="{%url 'dobby:edit' %}" data-link="영상편집"></a>
+                <a href="{%url 'board:postlist' %}" data-link="커뮤니티"></a>
+        </div>
         </div>
     </div>    
     <div class="container">
@@ -66,12 +62,36 @@
                     <strong>{{ post.post_title }}</strong>
                 </div>
                 <div class="post-btn">
+                    {% if request.session.s_id == post.member_id.member_id %}
                     <button class="adj-btn" onclick="location.href='{%url 'board:post_update' post.post_no %}'">수정</button>
                     <button class="del-btn" onclick="location.href='{%url 'board:post_delete' post.post_no %}'">삭제</button>
+                    {% endif %}
                 </div>
             </div>
             <div class="post">
+                {% if postfile %}
+                {% comment %} <form action="{% url 'board:post_file_download' post.post_no %}" method="post"> {% endcomment %}
+                    <i>{{postfile.postfile_name}}</i>
+                    
+                    
+
+
+
+                    {% csrf_token %}
+                    <button type="submit" name="filename" value="{{ postfile.postfile_name }}">
+                        다운로드
+                    </button>
+                </form>
+
+                <br>
+                <br>
+                {{post.post_detail}}
+                {% else %}
                 <img src='/static/assets/post.jpg' style="width: 700px; min-width: 140px;">
+                <br>
+                <br>
+                {{post.post_detail}}
+                {% endif %}
             </div>
             <ul class="comments">
                 {% comment %} {% for item in comment%}
@@ -109,6 +129,7 @@
                 </li>
             </ul>
         </div>
+        
     </div>
     <div class="foot">
         <div class="footleft">
@@ -127,7 +148,7 @@
             <button class="footbtn2" onclick="location.href='{%url 'main:main' %}'">
             </button>
         </div>
-    </div>  
+    </div>
 </body>
 <script src="/static/javascript/post.js"></script>
 
@@ -138,12 +159,12 @@
     [...document.querySelectorAll('.register-btn')].forEach(function (item) {
         item.addEventListener('click', e => {
             let content = document.querySelector('.comment-write').value;
-            let id_check = $('.comment-head').attr('id');
-            console.log(id_check);
+            //let id_check = $('.comment-head').attr('id');
+            //console.log(id_check);
             console.log(content);
             document.querySelector('.comment-write').value = '';
             let param = {
-                "post_no": id_check,
+                //"post_no": id_check,
                 "comment_detail": content,
             }
             $.ajax({
@@ -165,8 +186,8 @@
                     <img class="user-icon" src="{% static 'assets/harryicon.png'%}" alt="user icon">
                     </div>
                     <div class="comment-body">
+                        <h6>${receive.pp}</h6>
                         <p class="comment-text">${content}</p>
-                    <h6>${receive.pp}</h6>
                     </div>`;
                     newTr.innerHTML = str;
                     replyTable.append(newTr);

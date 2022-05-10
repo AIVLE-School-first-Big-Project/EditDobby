@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
     <link rel="stylesheet" href="{% static 'css/edit.css' %}">
+    <link rel="stylesheet" href="{% static 'css/topnavi.css' %}">
 
     <style>
         #modal.modal-overlay {
@@ -73,66 +74,41 @@
         <div class="nv">
             <div class="navleft">
                 <h1>
-                    <a href="{%url 'main:main' %}">DOBBYEDIT</a>
+                    <a href="{%url 'main:main' %}"><img src="/static/assets/final_logo.png"style="width:100px; height:100px;"></a>
                 </h1>
             </div>
-            <div class="navright">
-                <li class=nav_item>    
-                    <a href="{%url 'dobby:edit' %}">영상편집</a>
-                </li>
-                <li class="divider"></li>
-                <li class=nav_item>    
-                    <a href="{%url 'main:main' %}">게시판</a>
-                </li>
-                <li class="divider"></li>
-                <li class=nav_item>    
-                    <a href="{%url 'main:my' %}">MY</a>
-                </li>
+            <div class="gnb">
+                    <a href="{%url 'main:main' %}" data-link="Home"></a>
+                    <a href="{%url 'dobby:edit' %}" data-link="영상편집"></a>
+                    <a href="{%url 'board:postlist' %}" data-link="커뮤니티"></a>
             </div>
         </div>
         <div class="title">
             <h1>
-                영상편집을 성공하여 도비를 해방시켜주세요!
+                영상을 편집해서 도비를 해방시켜주세요!
             </h1>
         </div>
     </div>
+
+
     <div class="content">
         <div class="upload-button">
-            <div class="row2">
+            <div class="row2">   
                 {% comment %} if문: 동영상없으면 input form {% endcomment %}
                 <div class="filebox">
-                    <label for="file">
+                    <label for="input-file">
                         <strong>동영상을 넣어주세요</strong>
                     </label> 
-                    <input type="file" id="file">
+                    <form id="send" action="{% url 'dobby:edit' %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="file" id="input-file" name="e_file" style="display:none;">
+                    </form>
                 </div>
-                <div class="fun">
-                    <button class='bt1' onclick="location.href='{%url 'dobby:fun' %}'">next</button>
-                </div>
-                {% comment %} else문: 동영상있을시 쇼츠 or 썸네일추출 선택 {% endcomment %}
-                {% comment %} <div id="container">
-                    <h2>Lorem Ipsum</h2>
-                    <div id="lorem-ipsum"></div>
-                </div> {% endcomment %}
-                {% comment %} <button id="btn-modal"></button>
-                <div id="modal" class="modal-overlay">
-                    <div class="modal-window">
-                        <div class="title">
-                            <h2>모달</h2>
-                        </div>
-                        <div class="close-area">X</div>
-                        <div class="content">
-                            <p>가나다라마바사 아자차카타파하</p>
-                            <p>가나다라마바사 아자차카타파하</p>
-                            <p>가나다라마바사 아자차카타파하</p>
-                            <p>가나다라마바사 아자차카타파하</p>
-                            
-                        </div>
-                    </div>
-                </div> {% endcomment %}
             </div>
-            
         </div>
+    </div>
+    <div class='fun'>
+        <input type="submit" id="submit" form="send" value="편집시작!">
     </div>
     <div class="foot">
         <div class="footleft">

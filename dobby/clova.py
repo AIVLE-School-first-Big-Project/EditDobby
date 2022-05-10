@@ -1,19 +1,18 @@
 import requests
 import json
-from fileinput import close
-import io
+
 
 class ClovaSpeechClient:
     # Clova Speech invoke URL
-    invoke_url = 'https://clovaspeech-gw.ncloud.com/external/v1/2515/45ad113fe857520d01f7debdce76f2fa0468fefa7b13ff091beb960ce2950efa'
+    invoke_url = 'https://clovaspeech-gw.ncloud.com/external/v1/2641/a97323b33bfd42e7c904031187f22789a661e62a2d201a23be3aa8bb8a979145'
     # Clova Speech secret key
-    secret = '395be196a5f949d9a9b375cb0702fd55'
+    secret = 'd54ade44ce8449e2aec1550d5c469880'
 
     def req_url(self, url, completion, callback=None, userdata=None, forbiddens=None, boostings=None, wordAlignment=True, fullText=True, diarization=None):
         request_body = {
             'url': url,
-            # 'language': 'ko-KR',
-            'language': 'en-US',
+            'language': 'ko-KR',
+            # 'language': 'en-US',
             'completion': completion,
             'callback': callback,
             'userdata': userdata,
@@ -36,8 +35,8 @@ class ClovaSpeechClient:
                            wordAlignment=True, fullText=True, diarization=None):
         request_body = {
             'dataKey': data_key,
-            # 'language': 'ko-KR',
-            'language': 'en-US',
+            'language': 'ko-KR',
+            # 'language': 'en-US',
             'completion': completion,
             'callback': callback,
             'userdata': userdata,
@@ -59,8 +58,8 @@ class ClovaSpeechClient:
     def req_upload(self, file, completion, callback=None, userdata=None, forbiddens=None, boostings=None,
                    wordAlignment=True, fullText=True, diarization=None):
         request_body = {
-            'language': 'en-US',
-            # 'language': 'ko-KR',
+            # 'language': 'en-US',
+            'language': 'ko-KR',
             'completion': completion,
             'callback': callback,
             'userdata': userdata,
